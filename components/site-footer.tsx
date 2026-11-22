@@ -48,12 +48,12 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-[#2B3A48]">
-        <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-5 text-xs sm:flex-row sm:justify-between sm:px-6">
-          <p>
-            &copy; {new Date().getFullYear()} {site.name}
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-2 px-4 py-6 text-center sm:px-6">
+          <p className="text-base">
+            Made by <span className="font-bold text-accent">{site.credit}</span>
           </p>
-          <p>
-            Made by <span className="font-semibold text-white">{site.credit}</span>
+          <p className="text-xs">
+            &copy; {new Date().getFullYear()} {site.name}
           </p>
         </div>
       </div>
